@@ -73,3 +73,7 @@ a { text-decoration: underline; text-underline-offset: 2px; }
   display: inline-block;
 }
 .wa-text { text-decoration: underline; text-underline-offset: 2px; }
+
+.wa-icon { width: 18px; height: 18px; display: inline-block; flex: 0 0 auto; }
+.wa-icon svg { width: 100%; height: 100%; display: block; }
+

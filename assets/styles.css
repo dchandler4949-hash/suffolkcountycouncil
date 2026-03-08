@@ -42,3 +42,34 @@ a { text-decoration: underline; text-underline-offset: 2px; }
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
 }
+
+/* ---- Imprint + WhatsApp footer styles (added 2026-03-08) ---- */
+.imprint {
+  margin: 10px 0;
+  color: #111827;
+  font-weight: 600;
+}
+
+.footer-sep { margin: 0 8px; color: #6b7280; }
+
+.wa-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+.wa-link:hover { background: #f9fafb; }
+.wa-link:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; }
+
+.wa-icon {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #25D366; /* WhatsApp green */
+  display: inline-block;
+}
+.wa-text { text-decoration: underline; text-underline-offset: 2px; }

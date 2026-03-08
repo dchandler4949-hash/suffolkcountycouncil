@@ -82,3 +82,9 @@ a { text-decoration: underline; text-underline-offset: 2px; }
 .wa-icon { width: 18px !important; height: 18px !important; line-height: 0 !important; flex: 0 0 18px !important; }
 .wa-icon svg { width: 18px !important; height: 18px !important; max-width: 18px !important; max-height: 18px !important; }
 
+
+/* ---- HOTFIX: keep WhatsApp SVG from stretching ---- */
+.wa-link { display: inline-flex !important; width: auto !important; max-width: 100% !important; }
+.wa-icon { width: 18px !important; height: 18px !important; line-height: 0 !important; flex: 0 0 18px !important; }
+.wa-icon svg { width: 18px !important; height: 18px !important; max-width: 18px !important; max-height: 18px !important; }
+

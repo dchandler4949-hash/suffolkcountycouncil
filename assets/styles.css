@@ -140,3 +140,18 @@ a { text-decoration: underline; text-underline-offset: 2px; }
 
 
 
+
+/* WhatsApp icon size lock */
+.wa-link img,
+.wa-link svg{
+  width: 18px !important;
+  height: 18px !important;
+  max-width: 18px !important;
+  max-height: 18px !important;
+}
+
+/* FINAL HOTFIX: prevent huge WhatsApp SVG */
+.wa-link { display: inline-flex !important; align-items: center !important; width: auto !important; }
+.wa-icon { width: 18px !important; height: 18px !important; flex: 0 0 18px !important; line-height: 0 !important; }
+.wa-icon svg { width: 18px !important; height: 18px !important; display: block !important; flex: 0 0 18px !important; }
+.wa-icon svg * { vector-effect: non-scaling-stroke; }

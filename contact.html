@@ -5,16 +5,114 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Worlington Parish • Your Area • Suffolk County Council</title>
   <link rel="stylesheet" href="../assets/styles.css" />
+<style>
+  .top-nav{display:flex; flex-wrap:wrap; gap:10px; align-items:center}
+  .top-nav a{color:#fff; text-decoration:none; padding:6px 8px; border-radius:8px}
+  .top-nav a:hover,.top-nav a:focus{background:rgba(255,255,255,.12); outline:none}
+  .dd{position:relative}
+  .dd__menu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    min-width:280px;
+    background:#111827;
+    border:1px solid rgba(255,255,255,.18);
+    border-radius:12px;
+    padding:8px;
+    z-index:50;
+  }
+  .dd:hover .dd__menu, .dd:focus-within .dd__menu{display:block}
+  .dd__menu a{display:block; padding:8px 10px}
+  .dd__menu a:hover,.dd__menu a:focus{background:rgba(255,255,255,.12)}
+</style>
 </head>
 <body>
   <header style="padding:16px; background:#111827; color:#fff;">
     <h1 style="margin:0;">Suffolk County Council</h1>
-    <nav style="margin-top:8px;">
-  <a href="../index.html">Home</a>
-  <a href="../your-area/index.html">Your Area</a>
-  <a href="../about-david.html">About David</a>
-  <a href="../contact.html">Contact</a>
-  <a href="../legal/index.html">Legal</a>
+    <nav class="top-nav" aria-label="Primary">
+  <a href="/suffolkcountycouncil/index.html">Home</a>
+  <a href="/suffolkcountycouncil/your-area/index.html">Your Area</a>
+  <a href="/suffolkcountycouncil/about-david.html">About David</a>
+  <a href="/suffolkcountycouncil/contact.html">Contact</a>
+
+  <div class="dd">
+    <a class="dd__btn" href="/suffolkcountycouncil/democracy/index.html" aria-haspopup="true">Democracy</a>
+  </div>
+
+  <div class="dd">
+    <a class="dd__btn" href="/suffolkcountycouncil/environment/index.html" aria-haspopup="true">Environment</a>
+    <div class="dd__menu" role="menu" aria-label="Environment pages">
+      <a role="menuitem" href="/suffolkcountycouncil/environment/index.html">Overview</a>
+      <a role="menuitem" href="/suffolkcountycouncil/environment/agriculture.html">Agriculture</a>
+      <a role="menuitem" href="/suffolkcountycouncil/environment/solar-energy.html">Solar energy</a>
+    </div>
+  </div>
+
+  <div class="dd">
+    <a class="dd__btn" href="/suffolkcountycouncil/health-social-care/index.html" aria-haspopup="true">Health &amp; Social Care</a>
+    <div class="dd__menu" role="menu" aria-label="Health and social care pages">
+      <a role="menuitem" href="/suffolkcountycouncil/health-social-care/index.html">Overview</a>
+      <a role="menuitem" href="/suffolkcountycouncil/health-social-care/gp-dental-access.html">GP &amp; dental access</a>
+      <a role="menuitem" href="/suffolkcountycouncil/health-social-care/care-homes.html">Care homes</a>
+      <a role="menuitem" href="/suffolkcountycouncil/health-social-care/care-workers.html">Care workers</a>
+      <a role="menuitem" href="/suffolkcountycouncil/health-social-care/finances.html">Finances</a>
+    </div>
+  </div>
+
+  <div class="dd">
+    <a class="dd__btn" href="/suffolkcountycouncil/immigration/index.html" aria-haspopup="true">Immigration</a>
+    <div class="dd__menu" role="menu" aria-label="Immigration pages">
+      <a role="menuitem" href="/suffolkcountycouncil/immigration/index.html">Overview</a>
+      <a role="menuitem" href="/suffolkcountycouncil/immigration/local-economy-public-services.html">Local economy &amp; public services</a>
+      <a role="menuitem" href="/suffolkcountycouncil/immigration/us-military-local-services.html">US military &amp; local services</a>
+    </div>
+  </div>
+
+  <!-- Housing as main -->
+  <div class="dd">
+    <a class="dd__btn" href="/suffolkcountycouncil/infrastructure/index.html" aria-haspopup="true">Housing</a>
+    <div class="dd__menu" role="menu" aria-label="Housing pages">
+      <a role="menuitem" href="/suffolkcountycouncil/infrastructure/index.html">Overview</a>
+      <a role="menuitem" href="/suffolkcountycouncil/infrastructure/social-housing.html">Social housing</a>
+      <a role="menuitem" href="/suffolkcountycouncil/infrastructure/private-rented-accommodation.html">Private rented accommodation</a>
+      <a role="menuitem" href="/suffolkcountycouncil/infrastructure/private-housing-ownership.html">Private housing ownership</a>
+      <a role="menuitem" href="/suffolkcountycouncil/infrastructure/us-military-housing.html">US military housing</a>
+    </div>
+  </div>
+
+  <!-- Poverty & Employment as main -->
+  <div class="dd">
+    <a class="dd__btn" href="/suffolkcountycouncil/infrastructure/poverty.html" aria-haspopup="true">Poverty &amp; Employment</a>
+    <div class="dd__menu" role="menu" aria-label="Poverty and employment pages">
+      <a role="menuitem" href="/suffolkcountycouncil/infrastructure/poverty.html">Poverty</a>
+      <a role="menuitem" href="/suffolkcountycouncil/infrastructure/employment.html">Employment</a>
+    </div>
+  </div>
+
+  <div class="dd">
+    <a class="dd__btn" href="/suffolkcountycouncil/policing/index.html" aria-haspopup="true">Policing</a>
+    <div class="dd__menu" role="menu" aria-label="Policing pages">
+      <a role="menuitem" href="/suffolkcountycouncil/policing/index.html">Overview</a>
+      <a role="menuitem" href="/suffolkcountycouncil/policing/crime.html">Crime</a>
+      <a role="menuitem" href="/suffolkcountycouncil/policing/crime-commissioners.html">Crime commissioners</a>
+      <a role="menuitem" href="/suffolkcountycouncil/policing/staffing-finances.html">Staffing &amp; finances</a>
+    </div>
+  </div>
+
+  <a href="/suffolkcountycouncil/taxes/index.html">Taxes</a>
+
+  <div class="dd">
+    <a class="dd__btn" href="/suffolkcountycouncil/transport/index.html" aria-haspopup="true">Transport</a>
+    <div class="dd__menu" role="menu" aria-label="Transport pages">
+      <a role="menuitem" href="/suffolkcountycouncil/transport/index.html">Overview</a>
+      <a role="menuitem" href="/suffolkcountycouncil/transport/roads.html">Roads</a>
+      <a role="menuitem" href="/suffolkcountycouncil/transport/parking.html">Parking</a>
+      <a role="menuitem" href="/suffolkcountycouncil/transport/footpaths.html">Footpaths</a>
+    </div>
+  </div>
+
+  <a href="/suffolkcountycouncil/legal/index.html">Legal</a>
 </nav>
   </header>
 
@@ -61,6 +159,7 @@
 </footer>
 </body>
 </html>
+
 
 
 

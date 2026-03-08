@@ -5,6 +5,27 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Employment • David Chandler</title>
   <link rel="stylesheet" href="../assets/styles.css" />
+<style>
+  .top-nav{display:flex; flex-wrap:wrap; gap:10px; align-items:center}
+  .top-nav a{color:#fff; text-decoration:none; padding:6px 8px; border-radius:8px}
+  .top-nav a:hover,.top-nav a:focus{background:rgba(255,255,255,.12); outline:none}
+  .dd{position:relative}
+  .dd__menu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    min-width:280px;
+    background:#111827;
+    border:1px solid rgba(255,255,255,.18);
+    border-radius:12px;
+    padding:8px;
+    z-index:50;
+  }
+  .dd:hover .dd__menu, .dd:focus-within .dd__menu{display:block}
+  .dd__menu a{display:block; padding:8px 10px}
+  .dd__menu a:hover,.dd__menu a:focus{background:rgba(255,255,255,.12)}
+</style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -42,3 +63,4 @@
   <script src="../assets/site.js"></script>
 </body>
 </html>
+

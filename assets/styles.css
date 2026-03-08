@@ -97,6 +97,7 @@ a { text-decoration: underline; text-underline-offset: 2px; }
   border-bottom:1px solid rgba(255,255,255,.15);
 }
 .rolling-banner__track{
+  padding-left: 20px;
   display:flex;
   width:max-content;
   white-space:nowrap;
@@ -123,7 +124,8 @@ a { text-decoration: underline; text-underline-offset: 2px; }
 
 /* Accessibility: respect reduced motion */
 @media (prefers-reduced-motion: reduce){
-  .rolling-banner__track{ animation:none; }
+  .rolling-banner__track{
+  padding-left: 20px; animation:none; }
 }
 
 .rolling-banner{ position:relative; }
@@ -134,5 +136,6 @@ a { text-decoration: underline; text-underline-offset: 2px; }
   height:1px;
   overflow:hidden;
 }
+
 
 

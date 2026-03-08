@@ -101,7 +101,7 @@ a { text-decoration: underline; text-underline-offset: 2px; }
   width:max-content;
   white-space:nowrap;
   will-change:transform;
-  animation: roll-left 18s linear infinite;
+  animation: roll-left 28s linear infinite;
 }
 .rolling-banner__item{
   padding:10px 18px;
@@ -125,3 +125,13 @@ a { text-decoration: underline; text-underline-offset: 2px; }
 @media (prefers-reduced-motion: reduce){
   .rolling-banner__track{ animation:none; }
 }
+
+.rolling-banner{ position:relative; }
+.rolling-banner__sr{
+  position:absolute;
+  left:-9999px;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+

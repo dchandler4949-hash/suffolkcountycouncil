@@ -354,3 +354,23 @@ a:focus-visible{
     transition-duration: 0.001ms !important;
   }
 }
+
+/* === CENTERING: Hero + Rolling Banner === */
+.home-hero{
+  text-align: center;
+}
+.home-hero .cta{
+  justify-content: center;
+}
+
+.rolling-banner{
+  justify-content: center;
+  text-align: center;
+}
+.rolling-banner__track{
+  width: 100%;
+  justify-content: center;
+}
+.rolling-banner__item{
+  text-align: center;
+}

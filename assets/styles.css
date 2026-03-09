@@ -424,3 +424,20 @@ a:focus-visible{
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* === FOOTER: ensure fineprint is visible === */
+.site-footer,
+.site-footer *{
+  color: #ffffff;
+}
+
+.site-footer .fineprint,
+.site-footer .fineprint *{
+  color: rgba(255,255,255,0.92) !important;
+}
+
+.site-footer .fineprint{
+  font-size: 0.98rem;
+  line-height: 1.5;
+  margin-top: 10px;
+}

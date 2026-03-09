@@ -394,3 +394,33 @@ a:focus-visible{
 .site-footer .footer-links a{
   padding: 10px 10px;        /* larger tap target */
 }
+
+/* === FOOTER: single-line + sub-links === */
+.site-footer .footer-links{
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  gap: 10px;
+  margin: 8px 0 6px 0;
+  padding: 0 0 6px 0;
+  list-style: none;
+}
+
+.site-footer .footer-links a{
+  display: inline-block;
+  padding: 10px 10px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.site-footer .footer-sub-links{
+  margin-top: 4px;
+  font-size: 0.98rem;
+}
+.site-footer .footer-sub-links a{
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

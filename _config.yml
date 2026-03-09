@@ -1,0 +1,8 @@
+﻿title: David Chandler 2026
+description: Local priorities and proposals for Mildenhall High Town, Barton Mills, Worlington and Freckenham
+url: "https://dchandler4949-hash.github.io"
+baseurl: "/suffolkcountycouncil"
+
+# Keep it simple
+markdown: kramdown
+theme: minima

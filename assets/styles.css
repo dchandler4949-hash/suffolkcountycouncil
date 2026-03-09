@@ -441,3 +441,43 @@ a:focus-visible{
   line-height: 1.5;
   margin-top: 10px;
 }
+
+/* === JEKYLL LAYOUT BASICS (wrap/header/footer) === */
+.wrap{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.site-header .wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.site-brand{
+  font-weight: 900;
+  letter-spacing: 0.3px;
+}
+
+.site-nav{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.site-footer{
+  background: #0b0b0b;
+  border-top: 4px solid #d40000;
+  padding: 18px 0;
+}
+.site-footer, .site-footer *{
+  color: #fff;
+}
+
+.fineprint{
+  color: rgba(255,255,255,0.92);
+}
